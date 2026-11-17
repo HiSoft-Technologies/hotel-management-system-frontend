@@ -24,7 +24,11 @@ import type {
   User,
 } from "./types";
 
+<<<<<<< HEAD
 const BASE_URL = "/api";
+=======
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? "/api";
+>>>>>>> 6f4ee3464c2359eecf4ae5a76e424acb48b4b8d6
 
 export class ApiError extends Error {
   status: number;
