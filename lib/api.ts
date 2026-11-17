@@ -24,7 +24,7 @@ import type {
   User,
 } from "./types";
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? "/api";
+const BASE_URL = "/api";
 
 export class ApiError extends Error {
   status: number;
